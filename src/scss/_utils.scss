@@ -1,0 +1,66 @@
+@import "animations";
+
+//layout
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+// fonts
+.base-font-family {
+    font-family: $base-font-family;
+}
+
+.base-font-family-alt {
+    font-family: $base-font-family-alt;
+}
+
+.font-family-heading {
+    font-family: $font-family-heading;
+}
+
+// text aligns
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// copy
+.lead {
+    font-size: 2.3rem;
+    margin-top: 25px;
+}
+
+// colors
+.white {
+    color: #fff;
+}
+
+.base-color {
+    color: $base-color;
+}
+
+// dimensions
+.h-100 {
+    height: 100vh;
+}
+
+// misc
+.overflow-hidden {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}

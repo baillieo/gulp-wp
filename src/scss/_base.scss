@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'vendor/bootstrap/bootstrap_grid';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-family: $base-font-family;
+    color: $base-color;
+    position: relative;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-heading;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem; 
+}
+
+a {
+    text-decoration: none;
+    color: $base-color-link;
+}
+
+img {
+    width: 100%;
+}
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}

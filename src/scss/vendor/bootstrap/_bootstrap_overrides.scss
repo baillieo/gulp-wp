@@ -1,0 +1,36 @@
+// Bootstrap overrides
+
+$grays: (
+    100: #f4f4f4,
+    300: #d1d3d4,
+    800: #373d42
+);
+
+$orange: #eb9f4b;
+$green: #dae064;
+$blue: #9ecbd1;
+$cyan: #409ba3;
+
+$colors: (
+    orange: $orange,
+    green: $green,
+    blue: $blue,
+    cyan: $cyan
+);
+
+$grid-gutter-width: $grid-gutter;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1250px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 980px,
+    xl: $grid-container + $grid-gutter-width
+);

@@ -1,0 +1,84 @@
+.work {
+    &__project {
+        display: inline-block;
+        width: 33.33%;
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+        position: relative;
+        @include media-breakpoint-down(lg){
+            width: 50%;
+        }
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
+        a {
+            display: none;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;   
+        }
+        &:hover .work__overlay, 
+        &:focus .work__overlay {
+            transform: scale(1.2);
+        }
+        &:hover .work__overlay:before, 
+        &:focus .work__overlay:before {
+            display: block;
+        }
+        &:hover .work__info, 
+        &:focus .work__info {
+            display: block;
+        }
+        &:hover a,
+        &:focus a {
+            display: block;
+        }
+        &:nth-child(1){
+            height: 450px;
+        }
+        &:nth-child(2){
+            height: 550px;
+        }
+        &:nth-child(3){
+            height: 450px;
+        }
+        &:nth-child(4){
+            height: 550px;
+        }
+        &:nth-child(5){
+            height: 450px;
+        }
+        &:nth-child(6){
+            height: 550px;
+        }
+    }
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .5s;
+        &:before {
+            content: "";
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.75);
+        }
+    }
+    &__info {
+        display: none;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        max-width: 60%;
+    }
+}
