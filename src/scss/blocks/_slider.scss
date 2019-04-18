@@ -1,0 +1,24 @@
+.slider {
+  &__slide {
+    width: 100%;
+    text-align: center;
+    img {
+      max-width: 213px;
+      border: 5px solid hotpink;
+      border-radius: 50%;
+    }
+  }
+  &__inner {
+    max-width: 566px;
+    margin: 0 auto;
+  }
+  .flickity-button {
+    background: #f1f1f1;
+    &:hover {
+      background: #f1f1f1;
+    }
+    svg {
+      fill: #e6329e;
+    }
+  }
+}

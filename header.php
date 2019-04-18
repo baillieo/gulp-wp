@@ -10,9 +10,9 @@
         <body <?php body_class(); ?>> 
         <div class="wrapper">      
             <header class="header">
-                <div class="header__overlay"></div>
                 <div class="container">
                     <div class="header__container">
+                        <a class="header__logo" href="/">logo</a>
                         <nav class="header__nav">
                             <?php 
                                 wp_nav_menu( array(
@@ -22,11 +22,10 @@
                             ?>
                         </nav>
                         <div class="header__burger">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
+                            <div class="header__line"></div>
+                            <div class="header__line"></div>
+                            <div class="header__line"></div>
                         </div>
                     </div>
                 </div>
             </header>
-            <main>

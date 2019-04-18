@@ -2,15 +2,13 @@
 /**
  * Index Template
  *
- * @author    Project name
- * @copyright 2019 Project name
- * @version   1.0
+ * @author    Theme
+ * @copyright 2019 Theme
+ * @version   1.0.0
  */
 get_header();
     echo '<main>';
     echo get_template_part('lib/blocks/page-builder');
     echo '</main>';
- get_footer();
- echo '</div>';
-
+get_footer();
 ?>
