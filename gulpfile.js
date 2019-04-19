@@ -38,8 +38,8 @@ function scss() {
 function js() {
   return src(
     config.production
-      ? ["src/js/jquery.js", "src/js/vendor/*.js", "src/js/main.js"]
-      : "src/js/main.js"
+      ? ["src/js/jquery.js", "src/js/vendor/*.js", "src/js/scripts/*.js"]
+      : "src/js/scripts/*.js"
   )
     .pipe(
       babel({
