@@ -8,11 +8,4 @@
     header__nav.classList.toggle("open");
     body.classList.toggle("overflow-hidden");
   });
-
-  // slider
-  const flkty = new Flickity(".slider", {
-    wrapAround: true,
-    pageDots: false,
-    percentPosition: false
-  });
 })();
