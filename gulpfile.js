@@ -1,15 +1,14 @@
 // Modules
 const { watch, src, dest } = require("gulp"),
   uglify = require("gulp-uglify"),
-  util = require("gulp-util"),
   babel = require("gulp-babel"),
   sass = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
   imageMin = require("gulp-imagemin"),
   svgmin = require("gulp-svgmin"),
-  sourcemaps = require("gulp-sourcemaps"),
   concat = require("gulp-concat"),
   browserSync = require("browser-sync").create(),
+  util = require("gulp-util"),
   config = {
     production: !!util.env.production
   };
@@ -36,11 +35,7 @@ function scss() {
 
 // JS
 function js() {
-  return src(
-    config.production
-      ? ["src/js/jquery.js", "src/js/vendor/*.js", "src/js/scripts/*.js"]
-      : "src/js/scripts/*.js"
-  )
+  return src("src/js/scripts/*.js")
     .pipe(
       babel({
         presets: ["@babel/preset-env"]
